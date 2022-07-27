@@ -1,0 +1,2 @@
+# easyWeCom_middleProcessing
+基于JavaScript开发的中间页跳转服务，用于获取用户信息后进行相关处理。
