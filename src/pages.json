@@ -1,0 +1,15 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {}
+    }
+  ],
+  "globalStyle": {
+    "app-plus": {
+      "titleNView": false,
+      "popGesture": "close"
+    },
+    "navigationBarTitleText": " "
+  }
+}
