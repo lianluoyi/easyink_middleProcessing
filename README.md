@@ -1,4 +1,4 @@
-### easyWeCom 操作手册
+### easyink 操作手册
 
 [自建应用操作手册](https://www.yuque.com/docs/share/9217b462-a4c2-4d4a-97cb-48eebf800784?#hsf4v)
 
@@ -6,22 +6,22 @@
 
 ### :rocket: 项目介绍
 
-该项目为 easyWeCom 的前端模块之一，负责雷达链接 H5 页面跳转功能。
+该项目为 easyink 的前端模块之一，负责雷达链接 H5 页面跳转功能。
 
 ### :factory: 关联项目
 
 | 项目名                         | 项目说明                                                 | 项目地址                                              |
 | ------------------------------ | -------------------------------------------------------- | ----------------------------------------------------- |
-| easyWeCom_System               | easyWeCom 后端服务                                       | https://github.com/easywecom/easyWeCom_System.git     |
-| easyWeCom_Dashboard            | easyWeCom 前端服务，主要负责后台 UI 界面展示             | https://github.com/easywecom/easyWeCom_Dashboard.git  |
-| easyWeCom_Sidebar              | easyWeCom 前端服务，主要负责企微客户端中的侧边栏界面展示 | https://github.com/easywecom/easyWeCom_Sidebar.git    |
-| **middleProcessing(当前项目)** | **easyWeCom 前端服务，主要负责雷达链接 H5 页面跳转功能** | **https://github.com/easywecom/middleProcessing.git** |
+| easyink_System               | easyink 后端服务                                       | https://github.com/easyink/easyink_System.git     |
+| easyink_Dashboard            | easyink 前端服务，主要负责后台 UI 界面展示             | https://github.com/easyink/easyink_Dashboard.git  |
+| easyink_Sidebar              | easyink 前端服务，主要负责企微客户端中的侧边栏界面展示 | https://github.com/easyink/easyink_Sidebar.git    |
+| **middleProcessing(当前项目)** | **easyink 前端服务，主要负责雷达链接 H5 页面跳转功能** | **https://github.com/easyink/middleProcessing.git** |
 
 ### :checkered_flag: 开发
 
 ```
 # 克隆项目
-git clone https://github.com/easywecom/middleProcessing.git
+git clone https://github.com/easyink/middleProcessing.git
 
 # 进入项目目录
 cd middleProcessing
@@ -55,5 +55,5 @@ npm run build
 
 ### 🙋 注意事项
 
-- 请确保在 easyWeCom 后台系统中配置微信公众号对应的开发者 ID(AppID)、开发者密码(AppSecret)、网页授权域名（网页授权域名为“middleProcessing”服务的域名地址）
+- 请确保在 easyink 后台系统中配置微信公众号对应的开发者 ID(AppID)、开发者密码(AppSecret)、网页授权域名（网页授权域名为“middleProcessing”服务的域名地址）
 - 若跳转时显示 redirect_uri 与配置的授权完成回调域名不一致，请检查后台配置的网页授权域名
