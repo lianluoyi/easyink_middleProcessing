@@ -12,10 +12,10 @@
 
 | 项目名                         | 项目说明                                                 | 项目地址                                              |
 | ------------------------------ | -------------------------------------------------------- | ----------------------------------------------------- |
-| easyink_System               | easyink 后端服务                                       | https://github.com/easyink/easyink_System.git     |
-| easyink_Dashboard            | easyink 前端服务，主要负责后台 UI 界面展示             | https://github.com/easyink/easyink_Dashboard.git  |
-| easyink_Sidebar              | easyink 前端服务，主要负责企微客户端中的侧边栏界面展示 | https://github.com/easyink/easyink_Sidebar.git    |
-| **middleProcessing(当前项目)** | **easyink 前端服务，主要负责雷达链接 H5 页面跳转功能** | **https://github.com/easyink/middleProcessing.git** |
+| easyink_System               | easyink 后端服务                                       | https://github.com/lianluoyi/easyink_System.git     |
+| easyink_Dashboard            | easyink 前端服务，主要负责后台 UI 界面展示             | https://github.com/lianluoyi/easyink_Dashboard.git  |
+| easyink_Sidebar              | easyink 前端服务，主要负责企微客户端中的侧边栏界面展示 | https://github.com/lianluoyi/easyink_Sidebar.git    |
+| **middleProcessing(当前项目)** | **easyink 前端服务，主要负责雷达链接 H5 页面跳转功能** | **https://github.com/lianluoyi/middleProcessing.git** |
 
 ### :checkered_flag: 开发
 
