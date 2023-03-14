@@ -15,13 +15,13 @@
 | easyink_System               | easyink 后端服务                                       | https://github.com/lianluoyi/easyink_System.git     |
 | easyink_Dashboard            | easyink 前端服务，主要负责后台 UI 界面展示             | https://github.com/lianluoyi/easyink_Dashboard.git  |
 | easyink_Sidebar              | easyink 前端服务，主要负责企微客户端中的侧边栏界面展示 | https://github.com/lianluoyi/easyink_Sidebar.git    |
-| **middleProcessing(当前项目)** | **easyink 前端服务，主要负责雷达链接 H5 页面跳转功能** | **https://github.com/lianluoyi/middleProcessing.git** |
+| **middleProcessing(当前项目)** | **easyink h5前端服务，主要负责雷达、智能表单等营销活动页面的展示（非必要模块）** | **https://github.com/lianluoyi/middleProcessing.git** |
 
 ### :checkered_flag: 开发
 
 ```
 # 克隆项目
-git clone https://github.com/easyink/middleProcessing.git
+git clone https://github.com/lianluoyi/middleProcessing.git
 
 # 进入项目目录
 cd middleProcessing
@@ -55,5 +55,5 @@ npm run build
 
 ### 🙋 注意事项
 
-- 请确保在 easyink 后台系统中配置微信公众号对应的开发者 ID(AppID)、开发者密码(AppSecret)、网页授权域名（网页授权域名为“middleProcessing”服务的域名地址）
-- 若跳转时显示 redirect_uri 与配置的授权完成回调域名不一致，请检查后台配置的网页授权域名
+- 请确保已完成EasyInk后台（dashboard）中【系统设置】-【配置中心】-【公众号管理】的配置，（网页授权域名为“middleProcessing”服务的域名地址）
+- 若跳转时显示 redirect_uri 与配置的授权完成回调域名不一致，请检查后台配置的网页授权域名和公众号后台的是否一致
