@@ -15,7 +15,8 @@
 | easyink_System               | easyink 后端服务                                       | https://github.com/lianluoyi/easyink_System.git     |
 | easyink_Dashboard            | easyink 前端服务，主要负责后台 UI 界面展示             | https://github.com/lianluoyi/easyink_Dashboard.git  |
 | easyink_Sidebar              | easyink 前端服务，主要负责企微客户端中的侧边栏界面展示 | https://github.com/lianluoyi/easyink_Sidebar.git    |
-| **middleProcessing(当前项目)** | **easyink h5前端服务，主要负责雷达、智能表单等营销活动页面的展示（非必要模块）** | **https://github.com/lianluoyi/easyink_middleProcessing.git** |
+| **easyink_middleProcessing(当前项目)** | **easyink h5前端服务，主要负责雷达、智能表单等营销活动页面的展示（非必要模块）** | **https://github.com/lianluoyi/easyink_middleProcessing.git** |
+| easyink_MiniProgram   | easyink 活码小程序服务，主要负责员工活码、群活码页面的展示（非必要模块） | https://github.com/lianluoyi/easyink_MiniProgram |
 
 ### :checkered_flag: 开发
 
