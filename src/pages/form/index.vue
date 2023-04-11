@@ -273,7 +273,7 @@
     CAROUSEL_COMPONENT
   } from '../../utils/constant';
   import { indexOf, find, findIndex } from 'lodash';
-  import { getFormDetailApi, submitFormApi } from '../../config/api';
+  import { getFormDetailApi, submitFormApi } from '../../api';
   export default {
     data() {
       return {
