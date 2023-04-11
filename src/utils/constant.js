@@ -27,4 +27,7 @@ export const IMAGE_COMPONENT = 10;
 /** 轮播图 */
 export const CAROUSEL_COMPONENT = 11;
 
-export const BASE_URL = "/api";
+export const BASE_URL = '/api';
+
+/** 快照页错误码 */
+export const HTTP_CODE_SNAPSHOT = 9006;
