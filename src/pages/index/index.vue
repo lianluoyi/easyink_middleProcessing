@@ -163,7 +163,7 @@
        */
       getCode(appid, componentAppId) {
         const state = this.getShortLink(window.location.href);
-        const redirect_uri = encodeURIComponent(new URL(window.location).origin);
+        const redirect_uri = encodeURIComponent(new URL(window.location).origin)+new URL(window.location).pathname;
         const skipUrl = `https://open.weixin.qq.com/connect/oauth2/authorize?appid=${appid}&redirect_uri=${redirect_uri}&response_type=code&scope=snsapi_userinfo&state=${state}${
           componentAppId ? '&component_appid=' + componentAppId : ''
         }#wechat_redirect`;
