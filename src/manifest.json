@@ -54,7 +54,7 @@
       "disableHostCheck": true,
       "proxy": {
         "/api": {
-          "target": "https://wzm.wx95.net",
+          "target": "http://127.0.0.1:8090",
           "changeOrigin": true,
           "secure": true,
           "pathRewrite": {
