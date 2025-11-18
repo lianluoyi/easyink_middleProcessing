@@ -31,3 +31,8 @@ export const BASE_URL = '/api';
 
 /** 快照页错误码 */
 export const HTTP_CODE_SNAPSHOT = 9006;
+
+/** 港澳台 */
+export const SPECIAL_REGION = ['香港特别行政区', '澳门特别行政区', '台湾省'];
+/** 直辖市 */
+export const MUNICIPAL = ['北京市', '天津市', '上海市', '重庆市'];

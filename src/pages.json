@@ -10,6 +10,30 @@
     {
       "path": "pages/form/index",
       "style": {}
+    },
+    {
+      "path": "pages/dedicatedCode/index",
+      "style": {
+        "navigationBarTitleText": "专属活码"
+      }
+    },
+    {
+      "path": "pages/dedicatedCode/customerCode",
+      "style": {
+        "navigationBarTitleText": "专属活码"
+      }
+    },
+    {
+      "path": "pages/dedicatedCode/customerTags",
+      "style": {
+        "navigationBarTitleText": "设置标签"
+      }
+    },
+    {
+      "path": "pages/dedicatedCode/detailAddressSearch",
+      "style": {
+        "navigationBarTitleText": "编辑详细地址"
+      }
     }
   ],
   "globalStyle": {

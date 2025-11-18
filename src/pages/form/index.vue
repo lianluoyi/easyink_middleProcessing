@@ -157,6 +157,7 @@
         <u-button
           type="primary"
           :color="formSet.submitColor"
+          :loading="loading"
           :disabled="formSet.submitButtonDisabled"
           :text="formSet.submitText"
           customStyle="margin-top: 30px;border:none"
@@ -322,7 +323,8 @@
         resultPageOptions: {
           iconUrl: '',
           text: ''
-        }
+        },
+        loading: false
       };
     },
     onLoad(params) {
@@ -508,6 +510,7 @@
             npsValueList: customerServiceRate.npsValueList,
             scoreValueList: customerServiceRate.scoreValueList
           };
+          this.loading = true;
           submitFormApi(params).then(() => {
             switch (submitActionType) {
               case JUMP_RESULT_PAGE: {
@@ -533,6 +536,8 @@
                 this.formSet.submitButtonDisabled = true;
                 break;
             }
+          }).finally(() => {
+            this.loading = false;
           });
         } else {
           this.getElementScollTop(this.getElementId(checkRuleResultList[0]));
@@ -695,7 +700,8 @@
               // 是否已经填写该问题
               hasFillIn: Boolean(Array.isArray(con.answer) ? con.answer.length : con.answer),
               showFlag: con.showFlag,
-              iconName: con.iconName
+              iconName: con.iconName,
+              pushType: con.pushType
             };
             switch (con.type) {
               case RADIO_COMPONENT: {
