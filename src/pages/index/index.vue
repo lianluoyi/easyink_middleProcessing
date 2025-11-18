@@ -40,7 +40,9 @@
     // 员工活码
     userCode: 3,
     // 群活码
-    groupCode: 4
+    groupCode: 4,
+    // 专属活码
+    customerCode: 5
   };
   export default {
     data() {
@@ -58,13 +60,33 @@
       };
     },
     async onLoad() {
+      let shortLink;
+      let data;
+      if (this.isShortLink()) {
+        shortLink = this.getShortLink(window.location.href);
+        const res = await getUrlType(shortLink);
+        data = res?.data;
+        this.type = data?.type;
+        this.redirectUrl = data?.redirectUrl;
+        if (this.type === SHORT_LINK_TYPE['customerCode']) {
+          const newUrl = new URL(this.redirectUrl || window.location);
+          const customerCodeParams = {
+            employCodeId: newUrl.searchParams.get('employCodeId'),
+            corpId: newUrl.searchParams.get('corpId'),
+            shortUrlType: newUrl.searchParams.get('shortUrlType')
+          };
+          localStorage.setItem('customerCodeParams', JSON.stringify(customerCodeParams));
+          uni.$u.route({
+            url: 'pages/dedicatedCode/index',
+            params: customerCodeParams
+          });
+          return;
+        }
+      }
       // 当为短链时，且从企微跳转回来的没有formType时。
       if (this.isShortLink() && this.getUrlCode('state')?.indexOf('formType') === -1) {
         // 获取短链
-        const shortLink = this.getShortLink(window.location.href) || this.getUrlCode('state');
-        const { data } = await getUrlType(shortLink);
-        this.type = data.type;
-        this.redirectUrl = data.redirectUrl;
+        shortLink = shortLink || this.getUrlCode('state');
         if (data?.type === SHORT_LINK_TYPE['radar'] || data?.type === SHORT_LINK_TYPE['form']) {
           this.init(true);
         } else {
@@ -163,7 +185,7 @@
        */
       getCode(appid, componentAppId) {
         const state = this.getShortLink(window.location.href);
-        const redirect_uri = encodeURIComponent(new URL(window.location).origin)+new URL(window.location).pathname;
+        const redirect_uri = encodeURIComponent(new URL(window.location).origin) + new URL(window.location).pathname;
         const skipUrl = `https://open.weixin.qq.com/connect/oauth2/authorize?appid=${appid}&redirect_uri=${redirect_uri}&response_type=code&scope=snsapi_userinfo&state=${state}${
           componentAppId ? '&component_appid=' + componentAppId : ''
         }#wechat_redirect`;
